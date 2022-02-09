@@ -29,6 +29,21 @@ public class PacketHandler implements PluginMessageListener {
 		}
 	}
 
+	// Remove an instance.
+	public void removeInstance(Player player, NamespacedKey id) {
+		ByteArrayOutputStream b = new ByteArrayOutputStream();
+		DataOutputStream out = new DataOutputStream(b);
+
+		try {
+			out.writeUTF(id.getNamespace());
+			out.writeUTF(id.getKey());
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+
+		player.sendPluginMessage(MythicHUDPlugin.get(), MHChannels.REMOVE_INSTANCE, b.toByteArray());
+	}
+
 	private ByteArrayOutputStream writeMainInformation(NamespacedKey id, HUDInstance instance, int x, int y) throws IOException {
 		ByteArrayOutputStream b = new ByteArrayOutputStream();
 		DataOutputStream out = new DataOutputStream(b);
@@ -44,6 +59,9 @@ public class PacketHandler implements PluginMessageListener {
 		return b;
 	}
 
-	public static void writeItemStack(DataOutputStream out, ItemStack stack) {}
-	private static void writeNBT(DataOutputStream out, Object nbt) {}
+	public static void writeItemStack(DataOutputStream out, ItemStack stack) {
+	}
+
+	private static void writeNBT(DataOutputStream out, Object nbt) {
+	}
 }
