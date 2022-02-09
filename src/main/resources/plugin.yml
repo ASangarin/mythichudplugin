@@ -1,0 +1,16 @@
+name: MythicHUDPlugin
+version: '${project.version}'
+main: eu.asangarin.mythichud.MythicHUDPlugin
+api-version: 1.18
+author: ASangarin
+description: A plugin which allows your Spigot server to communicate with the MythicHUD mod.
+commands:
+    mythichud:
+        description: The main command for MythicHUD.
+        aliases: mh
+        permission: mythichud.admin
+        usage: "Usage: /mythichud [reload|info]"
+permissions:
+    mythichud.admin:
+        description: The main permission for MythicHUD.
+        default: op
