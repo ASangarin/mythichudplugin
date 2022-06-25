@@ -1,6 +1,6 @@
 package eu.asangarin.mythichud.instance;
 
-import eu.asangarin.mythichud.core.HUDInstance;
+import eu.asangarin.mythichud.api.HUDInstance;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.inventory.ItemStack;
 

@@ -1,0 +1,13 @@
+MyScreenOverlay:
+  Id: screen_overlay
+  Type: TEXTURE
+  Position:
+    X: 0
+    Y: 0
+    Anchor: CENTER
+  Args:
+    Texture:
+      PosU: 0
+      PosV: 0
+      Fill: STRETCH
+    Resource: "minecraft:assets/textures/gui/my_overlay.png"

@@ -1,0 +1,9 @@
+JustATextExample:
+  Id: text_example
+  Type: TEXT
+  Position:
+    X: 0
+    Y: 0
+    Anchor: BOTTOM_RIGHT
+  Args:
+    Text: "<red>WOOO RED TEXT!"

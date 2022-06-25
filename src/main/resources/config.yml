@@ -2,5 +2,6 @@
 # Made by Aria Sangarin
 
 # Config Version 1
-
-lol: Yay
+Configuration:
+  # Whether or not to send statistics to bStats
+  EnableMetrics: true

@@ -1,0 +1,28 @@
+BarOverlay:
+  Id: hp_bar_overlay
+  Type: TEXTURE
+  Position:
+    X: 0
+    Y: 0
+    Anchor: BOTTOM_CENTER
+  Args:
+    Texture:
+      PosU: 120
+      PosV: 120
+      Width: 120
+      Height: 120
+    Resource: "minecraft:assets/textures/gui/custom_bars.png"
+BarFill:
+  Id: hp_bar_fill
+  Type: TEXTURE
+  Position:
+    X: 0
+    Y: 0
+    Anchor: BOTTOM_CENTER
+  Args:
+    Texture:
+      PosU: 120
+      PosV: 120
+      Width: "%hp_bar_width%"
+      Height: 120
+    Resource: "minecraft:assets/textures/gui/custom_bars.png"

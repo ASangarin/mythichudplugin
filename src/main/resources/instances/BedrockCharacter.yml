@@ -1,0 +1,17 @@
+BedrockCharacter:
+  Id: bedrock_character
+  Type: ENTITY
+  Position:
+    X: 0
+    Y: 0
+    Anchor: TOP_LEFT
+  Args:
+    Target:
+      Type: CLIENT
+      #Type: ENTITY
+      #UUID: %placeholder_with_entity_uuid%
+    Pose:
+      Size: 10
+      BodyYaw: 20
+      #HeadYaw:
+      #Pitch:

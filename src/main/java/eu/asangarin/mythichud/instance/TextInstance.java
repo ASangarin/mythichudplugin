@@ -1,6 +1,6 @@
 package eu.asangarin.mythichud.instance;
 
-import eu.asangarin.mythichud.core.HUDInstance;
+import eu.asangarin.mythichud.api.HUDInstance;
 import lombok.RequiredArgsConstructor;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.chat.ComponentSerializer;

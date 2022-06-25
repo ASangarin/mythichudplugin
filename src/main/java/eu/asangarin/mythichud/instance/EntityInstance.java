@@ -1,7 +1,8 @@
 package eu.asangarin.mythichud.instance;
 
-import eu.asangarin.mythichud.core.HUDInstance;
-import lombok.RequiredArgsConstructor;
+import eu.asangarin.mythichud.api.HUDInstance;
+import lombok.AllArgsConstructor;
+import lombok.Setter;
 import org.bukkit.entity.LivingEntity;
 
 import java.io.DataOutputStream;
@@ -30,9 +31,17 @@ public class EntityInstance implements HUDInstance {
 		out.writeFloat(pose.pitch);
 	}
 
-	@RequiredArgsConstructor
+	@Setter
+	@AllArgsConstructor
 	public static class EntityPose {
-		private final int size;
-		private final float bodyYaw, yaw, pitch;
+		private int size;
+		private float bodyYaw, yaw, pitch;
+
+		public EntityPose(int size, LivingEntity entity) {
+			this.size = size;
+			this.bodyYaw = entity.getLocation().getYaw();
+			this.yaw = entity.getEyeLocation().getYaw();
+			this.pitch = entity.getEyeLocation().getPitch();
+		}
 	}
 }

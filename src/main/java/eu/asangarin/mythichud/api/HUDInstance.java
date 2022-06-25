@@ -1,4 +1,4 @@
-package eu.asangarin.mythichud.core;
+package eu.asangarin.mythichud.api;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
